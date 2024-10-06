@@ -58,6 +58,27 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+
+    flavorDimensions "flavor"
+
+    productFlavors {
+        dev {
+            dimension "flavor"
+            applicationId "com.example.hawyaty.dev"
+        }
+        prod {
+            dimension "flavor"
+            applicationId "com.example.hawyaty"
+        }
+        devHuawei {
+            dimension "flavor"
+            applicationId "com.example.hawyaty.dev"
+        }
+        prodHuawei {
+            dimension "flavor"
+            applicationId "com.example.hawyaty"
+        }
+    }
 }
 
 flutter {

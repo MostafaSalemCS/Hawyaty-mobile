@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "title": "titleEn",
+  "loginUser": "Login User",
+  "changeLang": "Chane lang",
+  "welcomeMessage": "Welcome",
+  "selectLevel": "Select Level",
+  "firstLevel": "First Level",
+  "secondLevel": "Second Level",
+  "thirdLevel": "Third Level"
+}

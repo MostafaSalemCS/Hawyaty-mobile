@@ -1,0 +1,11 @@
+{
+  "@@locale": "ar",
+  "title": "title ar",
+  "loginUser": "دخول مستخدم",
+  "changeLang": "تغير اللغة",
+  "welcomeMessage": "مرحبا",
+  "selectLevel": "اختر المستوي",
+  "firstLevel": "المستوي التمهيدي",
+  "secondLevel": "المستوي الثاني",
+  "thirdLevel": "المستوي الثالث"
+}
