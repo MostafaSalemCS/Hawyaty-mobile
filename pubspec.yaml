@@ -40,13 +40,16 @@ dependencies:
   equatable: ^2.0.5
   get_it: ^8.0.0
   flutter_inappwebview: ^6.0.0
-  connectivity_plus: ^5.0.2
+  connectivity_plus: ^6.0.5
   shared_preferences: ^2.2.3
   page_transition: ^2.1.0
   flutter_localization: ^0.2.2
   provider: ^6.1.2
   rxdart: ^0.28.0
   dartz: ^0.10.1
+  sizer: ^3.0.4
+  gamemap:
+    path: packages/gamemap
 
 dev_dependencies:
   flutter_test:
@@ -57,14 +60,20 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^4.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  fonts:
+    - family: AdobeArabic
+      fonts:
+        - asset: assets/fonts/ADOBEARABIC-BOLD.OTF
+          weight: 800
+        - asset: assets/fonts/ADOBEARABIC-REGULAR.OTF
+          weight: 400
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -76,6 +85,16 @@ flutter:
     - assets/i18n/
     - assets/i18n/ar.json
     - assets/i18n/en.json
+    - assets/drawable/map_vertical.png
+    - assets/drawable/map_vertical_2.png
+    - assets/drawable/map_vertical_point.png
+    - assets/drawable/map_horizontal.png
+    - assets/drawable/map_horizontal_point.png
+    - assets/drawable/Hawyaty-vertical.png
+    - assets/svg/map_vertical.svg
+    - assets/svg/map_vertical_2.svg
+    - assets/svg/map_horizontal.svg
+    - assets/svg/Hawyaty-vertical.svg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

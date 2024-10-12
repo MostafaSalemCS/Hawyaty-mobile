@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:hawyaty/core/localiztion/app_localization.dart';
 import 'package:hawyaty/core/localiztion/itranslate.dart';
 import 'package:hawyaty/modules/features/Login_screen/presentation/cubit/login_cubit.dart';
+import 'package:hawyaty/modules/features/Login_screen/presentation/widget/login_page.dart';
 import 'package:hawyaty/modules/shared/partial/presentation/base_screen/base_screen.dart';
 
 class LoginScreen extends BasePageScreen {
   final String? deepLink;
+
   const LoginScreen({super.key, this.deepLink});
 
   @override
@@ -24,19 +26,7 @@ class _LoginScreenState extends BasePageScreenState<LoginScreen> with BaseScreen
   @override
   Widget? body(BuildContext context) {
     // TODO: implement body
-    return Scaffold(
-      body: Container(
-        child: Center(child: GestureDetector(
-          onTap: (){
-            cubit.navigateToStudentHome();
-          },
-          child: Text(AppLocalizations.of(context)?.loginUser
-              ?? ""),
-        ),
-
-        ),
-      ),
-    );
+    return LoginPage(cubit: cubit);
   }
 
   @override

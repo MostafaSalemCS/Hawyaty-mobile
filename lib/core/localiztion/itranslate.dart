@@ -5,6 +5,8 @@ abstract class ITranslate {
 
   String get loginUser => translate("loginUser");
 
+  String get signIn => translate("signIn");
+
   String get changeLang => translate("changeLang");
 
   String get welcomeMessage => translate("welcomeMessage");

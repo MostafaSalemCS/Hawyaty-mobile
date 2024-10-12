@@ -1,7 +1,8 @@
 {
   "@@locale": "ar",
   "title": "title ar",
-  "loginUser": "دخول مستخدم",
+  "loginUser": "تسجيل دخول مستخدم",
+  "signIn": "تسجيل دخول",
   "changeLang": "تغير اللغة",
   "welcomeMessage": "مرحبا",
   "selectLevel": "اختر المستوي",

@@ -1,12 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hawyaty/core/router/route_names.dart';
 import 'package:hawyaty/modules/features/Login_screen/presentation/screen/login_screen.dart';
 import 'package:hawyaty/modules/features/custom_screen/presentation/screen/custom_screen.dart';
 import 'package:hawyaty/modules/features/landing/presentation/screen/landing_screen.dart';
 import 'package:hawyaty/modules/features/lang_screen/presentation/lang_screen.dart';
 import 'package:hawyaty/modules/features/student_home_screen/presentation/screen/student_home_screen.dart';
+import 'package:hawyaty/modules/features/unit_screen/presentation/screen/unit_screen.dart';
 import 'package:page_transition/page_transition.dart';
 
 class RouteGenerator {
@@ -98,7 +98,7 @@ class RouteGenerator {
       case RouteNames.customScreen:
         return PageTransition(
             settings: settings,
-            child:  MyWidget(),
+            child: MyWidget(),
             type: pageTransitionType,
             alignment: pageAlignment,
             reverseDuration: popDuration,
@@ -107,7 +107,16 @@ class RouteGenerator {
       case RouteNames.studentHome:
         return PageTransition(
             settings: settings,
-            child:  const StudentHomeScreen(),
+            child: const StudentHomeScreen(),
+            type: pageTransitionType,
+            alignment: pageAlignment,
+            reverseDuration: popDuration,
+            duration: pushDuration);
+
+      case RouteNames.unitScreen:
+        return PageTransition(
+            settings: settings,
+            child: const UnitScreen(),
             type: pageTransitionType,
             alignment: pageAlignment,
             reverseDuration: popDuration,

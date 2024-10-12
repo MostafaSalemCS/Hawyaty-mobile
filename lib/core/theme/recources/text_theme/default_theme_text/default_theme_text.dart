@@ -1,20 +1,19 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/painting/text_style.dart';
 import 'package:hawyaty/core/theme/recources/text_theme/theme_text.dart';
 
 class DefaultThemeText extends ThemeText {
-  DefaultThemeText({required super.themeColors, required super.fontSize, required super.fontWeight});
+  DefaultThemeText(
+      {required super.themeColors, required super.fontSize, required super.fontWeight});
 
   @override
   TextStyle buildMainAppTitleBarTextStyle() {
     // TODO: implement buildMainAppTitleBarTextStyle
-    return  TextStyle(
+    return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s24,
-        fontWeight:  baseFontWeight.bold,
+        fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }
 
@@ -24,8 +23,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s30,
-        fontWeight:  baseFontWeight.regular,
+        fontWeight: baseFontWeight.regular,
         letterSpacing: 0.25);
   }
 
@@ -35,8 +35,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s30,
-        fontWeight:  baseFontWeight.bold,
+        fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }
 
@@ -46,8 +47,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s28,
-        fontWeight:  baseFontWeight.regular,
+        fontWeight: baseFontWeight.regular,
         letterSpacing: 0.25);
   }
 
@@ -57,8 +59,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s26,
-        fontWeight:  baseFontWeight.regular,
+        fontWeight: baseFontWeight.regular,
         letterSpacing: 0.25);
   }
 
@@ -68,8 +71,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s26,
-        fontWeight:  baseFontWeight.bold,
+        fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }
 
@@ -79,8 +83,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s24,
-        fontWeight:  baseFontWeight.bold,
+        fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }
 
@@ -90,8 +95,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s24,
-        fontWeight:  baseFontWeight.regular,
+        fontWeight: baseFontWeight.regular,
         letterSpacing: 0.25);
   }
 
@@ -101,8 +107,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s20,
-        fontWeight:  baseFontWeight.bold,
+        fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }
 
@@ -112,8 +119,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s20,
-        fontWeight:  baseFontWeight.regular,
+        fontWeight: baseFontWeight.regular,
         letterSpacing: 0.25);
   }
 
@@ -123,8 +131,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s16,
-        fontWeight:  baseFontWeight.bold,
+        fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }
 
@@ -134,8 +143,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s16,
-        fontWeight:  baseFontWeight.regular,
+        fontWeight: baseFontWeight.regular,
         letterSpacing: 0.25);
   }
 
@@ -145,10 +155,9 @@ class DefaultThemeText extends ThemeText {
     return TextStyle(
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
+        fontFamily: "AdobeArabic",
         fontSize: baseFontSize.s30,
-        fontWeight:  baseFontWeight.bold,
+        fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }
-
-
 }

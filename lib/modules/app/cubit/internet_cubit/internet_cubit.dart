@@ -16,6 +16,7 @@ class InternetCubit extends Cubit<InternetState> {
 
   bool get getInternetDisConnected => _internetDisConnected;
   String _activePage = "";
+
   String get getActivePage => _activePage;
 
   InternetCubit({required this.connectivity}) : super(InternetLoading()) {
@@ -55,17 +56,21 @@ class InternetCubit extends Cubit<InternetState> {
 
   emitInternetConnected(ConnectionType _connectionTYpe) =>
       emit(InternetConnected(connectionType: _connectionTYpe));
+
   emitInternetDisConnected() => emit(InternetDisConnected());
 
-  StreamSubscription<ConnectivityResult> monitorInternetConnections() {
+  StreamSubscription<List<ConnectivityResult>> monitorInternetConnections() {
     return connectivityStreamSubscription =
-        connectivity.onConnectivityChanged.listen((connectivityResult) {
-      if (connectivityResult == ConnectivityResult.wifi) {
-        emitInternetConnected(ConnectionType.wifi);
-      } else if (connectivityResult == ConnectivityResult.mobile) {
-        emitInternetConnected(ConnectionType.mobile);
-      } else if (connectivityResult == ConnectivityResult.none) {
-        emitInternetDisConnected();
+        connectivity.onConnectivityChanged.listen((List<ConnectivityResult> connectivityResults) {
+      // Since it's a list, loop through the results and handle accordingly
+      for (var connectivityResult in connectivityResults) {
+        if (connectivityResult == ConnectivityResult.wifi) {
+          emitInternetConnected(ConnectionType.wifi);
+        } else if (connectivityResult == ConnectivityResult.mobile) {
+          emitInternetConnected(ConnectionType.mobile);
+        } else if (connectivityResult == ConnectivityResult.none) {
+          emitInternetDisConnected();
+        }
       }
     });
   }

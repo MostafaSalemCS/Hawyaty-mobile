@@ -8,16 +8,9 @@ part 'login_state.dart';
 class LoginCubit extends Cubit<LoginState> {
   LoginCubit() : super(LoginInitial());
 
-  Future<void> initialize() async{
+  Future<void> initialize() async {}
 
-  }
-
-  navigateToCustomScreen() {
-    AppNavigator.instance.navigateTo(RouteNames.langScreen);
-  }
-
-  navigateToStudentHome() {
+  Future<void> submitLogin() async {
     AppNavigator.instance.navigateTo(RouteNames.studentHome);
   }
-
 }

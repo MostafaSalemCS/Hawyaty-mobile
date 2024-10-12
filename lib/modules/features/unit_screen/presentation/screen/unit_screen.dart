@@ -1,4 +1,6 @@
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:get_it/get_it.dart';
+import 'package:hawyaty/modules/features/unit_screen/domain/usecase/unit_usecase.dart';
 import 'package:hawyaty/modules/features/unit_screen/presentation/cubit/unit_cubit.dart';
 import 'package:hawyaty/modules/features/unit_screen/presentation/widget/unit_page.dart';
 import 'package:hawyaty/modules/shared/partial/presentation/base_screen/base_screen.dart';
@@ -17,7 +19,10 @@ class _UnitScreen extends BasePageScreenState<UnitScreen> with BaseScreen {
   void initState() {
     // TODO: implement initState
     super.initState();
-    cubit = UnitCubit();
+    cubit = UnitCubit(
+      unitUseCase: GetIt.instance.get<UnitUseCase>(),
+    );
+    cubit.initialize();
   }
 
   @override

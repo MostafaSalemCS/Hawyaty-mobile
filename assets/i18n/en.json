@@ -2,6 +2,7 @@
   "@@locale": "en",
   "title": "titleEn",
   "loginUser": "Login User",
+  "signIn": "Sign In",
   "changeLang": "Chane lang",
   "welcomeMessage": "Welcome",
   "selectLevel": "Select Level",
