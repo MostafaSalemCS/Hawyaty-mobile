@@ -7,13 +7,18 @@ import 'package:hawyaty/modules/features/unit_screen/domain/entity/unit_entity.d
 import 'package:hawyaty/modules/features/unit_screen/domain/repository/unit_repository.dart';
 
 class UnitUseCase extends BaseUseCase<List<UnityEntity>, NoParams> {
+  final UnitRepository repository;
+
   List<UnityEntity> _dataSource = [];
 
   List<UnityEntity> get getDataSource => _dataSource;
 
   List<PointModel> get getUnitPoints => _getUnitPointsList();
 
-  final UnitRepository repository;
+  int _index = -1;
+  UnityEntity? _selectedDataSource = UnityEntity.empty();
+
+  UnityEntity? get getSelectedDataSource => _selectedDataSource;
 
   UnitUseCase({required this.repository});
 
@@ -29,7 +34,14 @@ class UnitUseCase extends BaseUseCase<List<UnityEntity>, NoParams> {
 
   List<PointModel> _getUnitPointsList() {
     return _dataSource.mapIndexed((int index, UnityEntity item) {
-      return PointModel(width: _dataSource.length.toDouble(), data: item);
+      // bool isCurrent = index == 7 ? true : false;
+
+      return PointModel(width: _dataSource.length.toDouble(), isCurrent: false, data: item);
     }).toList();
+  }
+
+  void selectedUnitByIndex(int index) {
+    _index = index;
+    _selectedDataSource = _dataSource.elementAtOrNull(index);
   }
 }

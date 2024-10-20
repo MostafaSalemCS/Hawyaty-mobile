@@ -17,7 +17,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
   void _getLocalUnitList() {
     _dataSource = <UnitDto>[
       UnitDto(
-          id: 1,
+          id: 1001,
           title: "1",
           subjectId: "1",
           fullyQualifiedName: "1",
@@ -27,7 +27,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
           unitNumber: 1,
           unitType: 1),
       UnitDto(
-          id: 2,
+          id: 1002,
           title: "2",
           subjectId: "2",
           fullyQualifiedName: "2",
@@ -37,7 +37,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
           unitNumber: 1,
           unitType: 1),
       UnitDto(
-          id: 3,
+          id: 1003,
           title: "3",
           subjectId: "3",
           fullyQualifiedName: "3",
@@ -47,7 +47,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
           unitNumber: 1,
           unitType: 1),
       UnitDto(
-          id: 4,
+          id: 1004,
           title: "4",
           subjectId: "4",
           fullyQualifiedName: "4",
@@ -57,7 +57,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
           unitNumber: 1,
           unitType: 1),
       UnitDto(
-          id: 5,
+          id: 1005,
           title: "5",
           subjectId: "5",
           fullyQualifiedName: "5",
@@ -67,7 +67,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
           unitNumber: 1,
           unitType: 1),
       UnitDto(
-          id: 6,
+          id: 1006,
           title: "6",
           subjectId: "6",
           fullyQualifiedName: "6",
@@ -77,7 +77,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
           unitNumber: 1,
           unitType: 1),
       UnitDto(
-          id: 7,
+          id: 1007,
           title: "7",
           subjectId: "7",
           fullyQualifiedName: "7",
@@ -87,7 +87,7 @@ class UnitLocalDataSourceImpl extends UnitLocalDataSource {
           unitNumber: 1,
           unitType: 1),
       UnitDto(
-          id: 8,
+          id: 1008,
           title: "8",
           subjectId: "8",
           fullyQualifiedName: "8",

@@ -1,7 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:gamemap/model/point_model.dart';
 import 'package:hawyaty/core/domain/base_usecase.dart';
-import 'package:hawyaty/modules/features/unit_screen/domain/entity/unit_entity.dart';
+import 'package:hawyaty/core/navigation/app_navigator.dart';
+import 'package:hawyaty/core/router/route_names.dart';
 import 'package:hawyaty/modules/features/unit_screen/domain/usecase/unit_usecase.dart';
 import 'package:meta/meta.dart';
 
@@ -30,7 +31,10 @@ class UnitCubit extends Cubit<UnitState> {
     });
   }
 
-  Future<void> onSelectedUnit(int id) async {
-    print(id);
+  Future<void> onSelectedUnit(int index) async {
+    unitUseCase.selectedUnitByIndex(index);
+    if (unitUseCase.getSelectedDataSource == null) return;
+    AppNavigator.instance
+        .navigateTo(RouteNames.lessonScreen, arguments: unitUseCase.getSelectedDataSource?.id);
   }
 }

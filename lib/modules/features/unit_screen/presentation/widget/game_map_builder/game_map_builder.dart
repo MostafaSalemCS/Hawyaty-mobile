@@ -18,7 +18,7 @@ class GameMapBuilder extends StatelessWidget {
           return GameLevelsScrollingMap.scrollable(
             imageUrl: "assets/drawable/Hawyaty-vertical.png",
             direction: Axis.vertical,
-            reverseScrolling: true,
+            reverseScrolling: false,
             pointsPositionDeltaX: -20,
             pointsPositionDeltaY: 0,
             currentPointDeltaY: 0,
@@ -26,7 +26,7 @@ class GameMapBuilder extends StatelessWidget {
             points: state.dataSource,
             getWidgetByIndex: (index) {
               return UnitCircleWidget(
-                id: index,
+                index: index,
                 order: index.toString(),
                 onTap: (int id) {
                   onTap(id);

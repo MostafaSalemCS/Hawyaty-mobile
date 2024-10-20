@@ -43,6 +43,19 @@ class UnityEntity {
         "unitNumber": unitNumber,
         "subjectId": subjectId,
       };
+
+  factory UnityEntity.empty() {
+    return UnityEntity(
+        id: 0,
+        title: "",
+        sort: 0,
+        fullyQualifiedName: "",
+        shortName: "",
+        isShow: false,
+        unitType: 0,
+        unitNumber: 0,
+        subjectId: "");
+  }
 }
 
 // ,[IsShow]

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 class UnitCircleWidget extends StatelessWidget {
-  final int id;
+  final int index;
   final String order;
-  final Function(int id) onTap;
+  final Function(int index) onTap;
 
-  const UnitCircleWidget({super.key, required this.id, required this.order, required this.onTap});
+  const UnitCircleWidget(
+      {super.key, required this.index, required this.order, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -23,8 +24,8 @@ class UnitCircleWidget extends StatelessWidget {
         ],
       ),
       onTap: () {
-        debugPrint("Point $id");
-        onTap(id);
+        debugPrint("Point $index");
+        onTap(index);
       },
     );
   }
