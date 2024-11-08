@@ -33,4 +33,13 @@ class TabletFontSize implements BaseFontSize {
 
   @override
   double s30 = 32.0;
+
+  @override
+  double s55 = 55.0;
+
+  @override
+  double s60 = 60.0;
+
+  @override
+  double s96 = 96.0;
 }

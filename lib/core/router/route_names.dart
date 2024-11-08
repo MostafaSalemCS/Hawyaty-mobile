@@ -8,4 +8,5 @@ class RouteNames {
   static const String studentHome = "/student-home";
   static const String unitScreen = "/unit-Screen";
   static const String lessonScreen = "/lesson-Screen";
+  static const String loTypeScreen = "/lo-type-Screen";
 }

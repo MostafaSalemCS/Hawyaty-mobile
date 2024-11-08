@@ -6,6 +6,7 @@ import 'package:hawyaty/modules/features/custom_screen/presentation/screen/custo
 import 'package:hawyaty/modules/features/landing/presentation/screen/landing_screen.dart';
 import 'package:hawyaty/modules/features/lang_screen/presentation/lang_screen.dart';
 import 'package:hawyaty/modules/features/lesson_screen/presentation/screen/lesson_screen.dart';
+import 'package:hawyaty/modules/features/lo_type_screen/presentation/screen/lo_type_screen.dart';
 import 'package:hawyaty/modules/features/student_home_screen/presentation/screen/student_home_screen.dart';
 import 'package:hawyaty/modules/features/unit_screen/presentation/screen/unit_screen.dart';
 import 'package:page_transition/page_transition.dart';
@@ -127,6 +128,15 @@ class RouteGenerator {
         return PageTransition(
             settings: settings,
             child: LessonScreen(unitId: args as int),
+            type: pageTransitionType,
+            alignment: pageAlignment,
+            reverseDuration: popDuration,
+            duration: pushDuration);
+
+      case RouteNames.loTypeScreen:
+        return PageTransition(
+            settings: settings,
+            child: LOTypeScreen(),
             type: pageTransitionType,
             alignment: pageAlignment,
             reverseDuration: popDuration,

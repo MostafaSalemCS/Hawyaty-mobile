@@ -20,3 +20,10 @@ enum SupplementaryColorsEnum {
   transparent,
   purple,
 }
+
+enum BaseCubitStatus {
+  initial,
+  loading,
+  loaded,
+  error,
+}

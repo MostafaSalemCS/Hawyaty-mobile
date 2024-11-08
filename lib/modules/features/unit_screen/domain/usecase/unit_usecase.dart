@@ -34,9 +34,9 @@ class UnitUseCase extends BaseUseCase<List<UnityEntity>, NoParams> {
 
   List<PointModel> _getUnitPointsList() {
     return _dataSource.mapIndexed((int index, UnityEntity item) {
-      // bool isCurrent = index == 7 ? true : false;
+      bool isCurrent = index == 7 ? true : false;
 
-      return PointModel(width: _dataSource.length.toDouble(), isCurrent: false, data: item);
+      return PointModel(width: _dataSource.length.toDouble(), isCurrent: isCurrent, data: item);
     }).toList();
   }
 

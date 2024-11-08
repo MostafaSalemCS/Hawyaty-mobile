@@ -9,6 +9,8 @@ class GetLessonsUseCase extends BaseUseCase<List<LessonEntity>, int> {
 
   List<LessonEntity> _dataSource = [];
 
+  List<LessonEntity> get getDataSource => _dataSource;
+
   GetLessonsUseCase({required this.repository});
 
   @override

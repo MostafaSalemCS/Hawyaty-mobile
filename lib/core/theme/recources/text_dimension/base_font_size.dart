@@ -10,4 +10,7 @@ abstract class BaseFontSize {
   double s26 = 26.0;
   double s28 = 28.0;
   double s30 = 30.0;
+  double s55 = 55.0;
+  double s60 = 60.0;
+  double s96 = 96.0;
 }

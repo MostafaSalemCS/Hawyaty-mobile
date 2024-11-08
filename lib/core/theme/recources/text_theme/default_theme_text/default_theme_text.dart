@@ -24,7 +24,7 @@ class DefaultThemeText extends ThemeText {
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
         fontFamily: "AdobeArabic",
-        fontSize: baseFontSize.s30,
+        fontSize: baseFontSize.s96,
         fontWeight: baseFontWeight.regular,
         letterSpacing: 0.25);
   }
@@ -36,7 +36,7 @@ class DefaultThemeText extends ThemeText {
         color: Colors.black,
         // fontFamily: fontManager.currentFontFamily,
         fontFamily: "AdobeArabic",
-        fontSize: baseFontSize.s30,
+        fontSize: baseFontSize.s55,
         fontWeight: baseFontWeight.bold,
         letterSpacing: 0.25);
   }

@@ -27,7 +27,7 @@ class LoginPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(AppLocalizations.of(context)!.loginUser,
-                      style: context.getAppTheme.appThemeText.body1TextStyle),
+                      style: context.getAppTheme.appThemeText.h2BoldTextStyle),
                 ],
               ),
               SizedBox(height: 20.w),

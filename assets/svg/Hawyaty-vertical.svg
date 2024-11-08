@@ -1,10 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 1200 3613">
-    <defs>
-        <style>
-            .st0{fill:none;stroke:#000;stroke-miterlimit:10;}
-        </style>
-    </defs>
-    <title>Hawyaty App. main map vertical</title>
-    <polyline class="st0" points="785.04 3780.48 753.74 3123.09 215.3 2709.87 922.78 2302.91 641.04 1539.09 158.96 1013.18 678.61 737.7 866.43 155.44"/></svg>
+<?xml version="1.0" encoding="utf-8"?><!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg style="enable-background:new 0 0 1200 3613;" id="Layer_1" version="1.1" viewBox="0 0 1200 3613"
+    x="0px" xmlns="http://www.w3.org/2000/svg" y="0px" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;}
+</style>
+    <g>
+	<g id="Layer_2_00000047029787279909166090000005062049033933823929_">
+		<polyline class="st0"
+            points="769 3465.4 754.7 2876.7 270.4 2492.1 887.7 2086.4 582.2 1347.4 242.9 963.4 623.4 675.3 847.4 152.8" />
+	</g>
+</g>
+</svg>

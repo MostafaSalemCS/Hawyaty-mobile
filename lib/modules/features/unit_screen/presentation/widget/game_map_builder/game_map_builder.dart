@@ -19,9 +19,11 @@ class GameMapBuilder extends StatelessWidget {
             imageUrl: "assets/drawable/Hawyaty-vertical.png",
             direction: Axis.vertical,
             reverseScrolling: false,
+
             pointsPositionDeltaX: -20,
-            pointsPositionDeltaY: 0,
-            currentPointDeltaY: 0,
+            pointsPositionDeltaY: -15,
+            // currentPointDeltaY: 9,
+            // currentPointDeltaY: 0,
             svgUrl: 'assets/svg/Hawyaty-vertical.svg',
             points: state.dataSource,
             getWidgetByIndex: (index) {

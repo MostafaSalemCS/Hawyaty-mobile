@@ -148,7 +148,7 @@ class _GameLevelsScrollingMapState extends State<GameLevelsScrollingMap> {
             ? SingleChildScrollView(
                 controller: _scrollController,
                 scrollDirection: widget.direction ?? Axis.horizontal,
-                reverse: widget.reverseScrolling ?? false,
+                // reverse: widget.reverseScrolling ?? false,
                 child: aspectRatioWidget(),
               )
             : aspectRatioWidget());
@@ -162,7 +162,7 @@ class _GameLevelsScrollingMapState extends State<GameLevelsScrollingMap> {
           return imageWidth != 0
               ? Stack(
                   textDirection: TextDirection.ltr,
-                  alignment: AlignmentDirectional.topStart,
+                  alignment: AlignmentDirectional.bottomEnd,
                   children: widgets)
               : const LoadingProgress();
         },
